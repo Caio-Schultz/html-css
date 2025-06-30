@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* a ordem dessas subclasses é importante. Nesse caso, como hover está mais embaixo, ela tem prioridade. Se hover estivesse em cima de visited, a cor não mudaria para black */
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        /* visited é uma subclasse. Indentifica os links que já foram visitados */
+        a:visited{
+            color: darkred;
+        } 
+
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* quando o link é CLICADO ele fica yellow por conta da subclasse active */ 
+        a:active{
+            color: yellow;
+        }
+
+        /* isso é um pseudo-elemento, ele é indicado por :: e está relacionado com o conteúdo. Nesse caso, o pseudo-elemento 'after' indica que após os links (a) é para indicar que é um [link] */
+        a::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemVídeo" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

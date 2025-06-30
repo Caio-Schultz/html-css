@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'FonteAndroid';
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root{
+    --cor1: #252625;
+    --cor2: #585957;
+    --cor3: #8B8C8B;
+    --cor4: #D9D9D9;
+    --cor5: #0D0D0D;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #D9D9D9;
+    margin: 0;
+}
+
+header{
+    color: white;
+    background-image: linear-gradient(to bottom, #D9D9D9, #8B8C8B);
+    height: 200px;
+    box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.333);
+}
+
+header > h1{
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 20px;
+}
+
+header > p{
+    text-align: center;
+    font-weight: lighter;
+    padding: 15px;
+}
+
+nav{
+    padding-left: 10px;
+    margin-top: -22px;
+}
+
+/* o sinal '>' indica que tem uma tag pai e uma tag filho. No caso, a tag 'pai' é nav e a tag filho é 'a'. Está sendo indicado que a configuração é em todos os 'a' que estão dentro da tag 'nav' */
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+nav > a:hover{
+    color: #585957;
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    color: black;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    margin-top: -16px;
+    padding-bottom: 7px;
+    box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.333);
+}
+
+main img{
+    width: 100%; 
+}
+
+
+#imagem-bugdroid{
+    /* é necessário transformar a imagem em bloco para poder usar o 'margin' e centralizar a imagem com auto */
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+#secaoHistoria > h1{
+    font-family: FonteAndroid, sans-serif;
+    font-size: 2em;
+    padding-top: 15px;
+    padding-left: 10px;
+    color: #252625;
+}
+#secaoHistoria > p{
+    text-align: justify;
+    text-indent: 2em;
+    font-size: 1.2em;
+    padding: 0px 10px 5px 10px;
+}
+
+.titulo-versoes{
+    font-family: FonteAndroid, sans-serif;
+    font-size: 1.6em;
+    padding-top: 1px;
+    padding-left: 10px;
+    color: #252625;
+    background-image: linear-gradient(to right, #D9D9D9, transparent);
+    margin: 5px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.333);
+}
+
+.paragrafo-versoes{
+    text-align: justify;
+    text-indent: 2em;
+    font-size: 1.2em;
+    padding: 0px 10px 5px 10px;
+}
+
+
+
+#secaoExtra > h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    background-color: #585957;
+    margin: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* todas essas configurações do #video são para fazer com que ele fique centralizado 
+   e responsivo */
+#video{
+    background-color: var(--cor2);
+    margin-bottom: 30px;
+    padding: 20px;
+    padding-bottom: 53.7%;
+    position: relative;
+}
+
+#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#conteudo-extra{
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color: black;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #D9D9D9;
+    margin: -5px 5px 5px 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#conteudo-extra > p{
+    text-indent: 2em;
+    text-align: justify;
+    
+    padding: 0px 10px 5px 10px;
+}
+
+#conteudo-extra ul{
+    /* columns cria quantas colunas você desejar para a lista */
+    columns: 2;
+}
+
+
+footer{
+    background-color: #252625;
+}
+
+footer > h1{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+}
+
+.bold-text{
+    font-weight: 800;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+
+        div > p{
+            display: none;
+        }
+        
+        /* Existem várias pseudo-classes e cada uma faz uma ação diferente
+        O hover, por exemplo, é responsável pela ação de passar o ponteiro do mouse sobre. Nesse caso, se eu passar o ponteiro do mouse sobre o texto da div, vai aparecer o parágrafo escondido. Para usar uma pseudo-classe é necessário usar ':'
+        */ 
+        div:hover > p{
+            display: block;
+            background-color: red;
+        }
+        
+        div:hover{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passes o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>texto escondido</p>
+    </div>
+</body>
+</html>
