@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+        }
+        #conteudo{
+            /* para fazer o alinhamento horizontal basta usar margin: auto; No entanto, para fazer o alinhamento vertical é um pouco mais complexo. Primeiro, é importante colocar uma "caixa" dentro de outra. No caso, article está dentro do section. A caixa que contém (section) deve ter um position = relative (é o padrão, não é necessário definir igual eu fiz acima) e a caixa que está contida (article) deve ter um position = absolute (esse sim deve ser definido). Colocando a position como absolute, é possível usar as propriedades 'left' e 'top' com valores em porcentagem e px. A partir disso, podemos usar a propriedade transform: translate() que é possível definir o posicionamento da caixa em px ou porcentagem também*/
+
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+            left: 50%;
+            top: 50%;
+
+            /* o primeiro valor mexe para a esquerda ou direita (se estiver negativo para esquerda e positivo para a direita). O segundo valor mexe para cima e para baixo (se estiver negativo para cima e positivo para baixo ) */
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

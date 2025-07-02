@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "Passion one", sans-serif;
+}
+
+
+header h1{
+    font-size: 4em;
+    padding-top: 60px;
+}
+
+header h2{
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    padding-bottom: 60px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+pre{
+    font-size: 2em;
+    padding-left: 30px;
+    /* essa propriedade indica a altura entre as linhas, ou seja, o espaçamento entre elas. O valor pode ser em px ou porcentagem. Também pode ser em "vezes o tamanho da fonte". Nesse caso, o espaçamento entre as linhas 2 vezes o tamanho da fonte. */
+    line-height: 2;
+    font-family: Sriracha, cursive;
+}
+
+.estrofe-fundo-branco{
+    background-color: white;
+    color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#segunda-estrofe{
+    background: black url('arquivos/imagens/background001.jpg') center center no-repeat
+    fixed;
+    background-size: cover;
+   color: white;
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+
+
+#quinta-estrofe{
+    background: black url('arquivos/imagens/background002.jpg') center center no-repeat fixed;
+    background-size: cover;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.pre-especial{
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.320);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+    max-height: 450px;
+    max-width: 410px; 
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.258);
+}
+
+#ultima-estrofe{
+    padding-bottom: 15px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+footer p{
+    font-size: 1.1em;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer strong{
+    font-weight: bold;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+
