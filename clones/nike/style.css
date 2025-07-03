@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
     padding: 0;
@@ -42,11 +44,24 @@ header a{
     color: black;
     padding-left: 30px;
     font-size: 1.05em;
+    font-weight: 400;
 }
 
 #cabecalho{
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+#cabecalho a{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 100;
+}
+
+#cabecalho a:hover{
+    text-decoration: underline;
+    /* essa propriedade permite com que eu abaixe (em px) a linha underline para que ela não fique colocada no texto */
+    text-underline-offset: 42px;
 }
 
 #promocao{
@@ -62,3 +77,84 @@ header a{
 #promocao a{
     color: black;
 }
+
+main{
+    margin: auto;
+    max-width: 1350px;
+    min-width: 320px;
+}
+
+#titulo-video{
+    height: 175px;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+#titulo-video > h1{
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    /* transforma todas as letras em uppercase (maiúscula) */
+    text-transform: uppercase;
+    font-size: 2.6em;
+    padding-top: 20px;
+    letter-spacing: -1px;
+}
+
+#titulo-video > p{
+    padding-top: 10px;
+    font-size: 1.1em;
+    font-weight: 300;
+    text-shadow: 0.3px 0.3px 0px rgba(0, 0, 0, 0.184);
+}
+
+#saiba-mais {
+    background-color: white;
+    height: 100px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#saiba-mais-caixa{
+    position: absolute;
+
+    left: 47%;
+    right: 50%;
+    transform: translate(-46%, 57%);
+}
+
+#saiba-mais-caixa > p{
+    text-align: center;
+    font-size: 1.05em;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    width: 90px;
+    padding: 15px;
+}
+
+#saiba-mais a{
+    text-decoration: none;
+    color: white;
+}
+
+#saiba-mais-caixa p:hover{
+    background-color: rgba(0, 0, 0, 0.588);
+}
+
+.banners{
+    width: 667px;
+    /* deixando o height = auto, vai ser ajustado automaticamente para ter proporção com o width que eu escolhi. Pode ser feito o contrário também, ou seja, definir o height e colocar auto para o width */
+    height: auto;
+}
+
+.banners-direita{
+    padding-left: 7px;
+}
+
+.banners-acima{
+    padding-bottom: 7px;
+}
+
+
+
+
