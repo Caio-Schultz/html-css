@@ -175,13 +175,13 @@ main{
     padding-right: 5px;
 }
 
-#produtos-mais-buscados h2{
+#produtos-mais-buscados h2, #outras-categorias h2{
     font-size: 1.7em;
     font-weight: 100;
     padding-bottom: 20px;
 }
 
-#produtos-mais-buscados a{
+#produtos-mais-buscados a, #outras-categorias a{
     text-decoration: none;
     color: #4D4D4D;
     font-size: 1.4em;
@@ -201,6 +201,7 @@ main{
 }
 
 #produtos-mais-buscados h3{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3em;
     font-weight: 100;
     padding-top: 30px;
@@ -208,19 +209,20 @@ main{
 }
 
 
-ul {
+#produtos-mais-buscados ul, #outras-categorias ul {
     /* remove o marker dos itens da lista */
     list-style-type: none;
+    padding-bottom: 40px;
 }
 
-ul li{
+#produtos-mais-buscados ul li, #outras-categorias ul li{
     font-weight: 100;
     color: #857385;
     line-height: 0.8;
     font-size: 0.7em;
 }
 
-#produtos-mais-buscados li:hover{
+#produtos-mais-buscados li:hover, #outras-categorias li:hover{
     color: black;
 }
 
@@ -248,15 +250,18 @@ ul li{
     transform: translate(-50%, -100%);
 }
 
-#mostrar-mais-caixa{
+.mostrar-mais-caixa{
     position: absolute;
 
     left: 47%;
     right: 50%;
-    transform: translate(-46%, 57%);
+    transform: translate(-17%, -200%);
+
+   
 }
 
-#produtos-mais-buscados p#mostrar-mais{
+#produtos-mais-buscados p.mostrar-mais, #outras-categorias p.mostrar-mais{
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 7px;
@@ -265,8 +270,77 @@ ul li{
     width: 94px;
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 
+#outras-categorias{
+    background-color: #F5F5F5;  
+}
 
+#outras-categorias h2{
+    padding-top: 40px;
+    text-indent: 80px;
+    padding-bottom: 30px;
+}
 
+#outras-categorias ul{
+    /* usando essas propriedas, é possível definir 4 linhas por coluna */
+    display: grid;
+    grid-template-rows: repeat(4, auto); /* 4 linhas */
+    grid-auto-flow: column; 
+    padding-left: 80px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    padding-bottom: 200px;
+}
+
+#busca{
+    padding-top: 40px;
+    padding-left: 120px;
+    line-height: 30px;
+}
+
+h4{
+    font-weight: 100;
+    padding-bottom: 25px;
+}
+
+.lista-com-titulo{
+    font-size: 0.8em;
+    line-height: 25px;
+}
+
+#ajuda{
+    position: absolute;
+
+    left: 45%;
+    right: 50%;
+    transform: translate(-72%, -94%);
+    width: 131px;
+}
+
+#sobre-nike{
+    position: absolute;
+
+    left: 50%;
+    right: 50%;
+    transform: translate(83%, -135%);
+    width: 113px;
+}
+
+hr{
+    background-color: white;
+}
 
